@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <!-- allows you to add diff icons into project (phone, mail, etc) -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <!-- allows you to use all the diff classes materialize comes with -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Materialize CSS</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Modals</h2>
+
+        <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+        <div class="modal" id="terms">
+            <div class="modal-content">
+                <h4>Terms & Conditions</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close btn orange">Agree</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- allows you to use the more interactive components (buttons, etc) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+    </script>
+</body>
+</html>
